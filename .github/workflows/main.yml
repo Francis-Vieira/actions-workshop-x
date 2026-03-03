@@ -1,0 +1,14 @@
+name: Workflow treinamento CAIXA
+
+on:
+    workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: saudacao ao usuario
+        run: echo "Alo Mundo"
+      - run: ls -l
+      - uses: actions/checkout@v6
+      - run: ls -l
